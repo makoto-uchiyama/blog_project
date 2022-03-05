@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+<form action="" method="POST">{% csrf_token %}
+  <label for="">本当に削除しますか?</label>
+  <input type="submit" value="削除する">
+</form>
+{% endblock content %}
